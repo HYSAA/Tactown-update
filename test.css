@@ -1,0 +1,37 @@
+
+#expanded-image-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* This will create a semi-transparent black overlay */
+  z-index: 9999;
+}
+
+#expanded-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-out; /* Add transition effect */
+}
+img{
+  width: 50%;
+  height: 50%;
+}
+#close-button {
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
